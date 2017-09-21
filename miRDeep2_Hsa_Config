@@ -1,0 +1,7 @@
+genome	/Public_Resources/Illumina_Genome/iGenome/Homo_sapiens/UCSC/hg38/Sequence/BowtieIndex/genome
+genomeFa	/Public_Resources/Illumina_Genome/iGenome/Homo_sapiens/UCSC/hg38/Sequence/WholeGenomeFasta/genome.fa
+mature_fa	/home/gray/mirbase/mature_hsa.fa
+mature_out_fa	/home/gray/mirbase/mature_hsa_out.fa
+hairpin_fa	/home/gray/mirbase/hairpin_hsa.fa
+miRDeep2Spec	Human
+

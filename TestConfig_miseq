@@ -1,0 +1,13 @@
+SAMPLESHEET	./TestSampleSheet
+STORE_DIR	/home/gray/NGS_project_start201707/20170918_NTU_3T3micemiRNA/currently/RawData/
+QCWORK_DIR	/home/gray/NGS_project_start201707/20170918_NTU_3T3micemiRNA/currently/QCwork/
+QC_3ADA	TGGAATTCTCGGGTGCCAAGG
+QC_MINLEN	18
+QC_QVALUE	20
+QC_Pcent	70
+Q33	-Q33
+CORE	20
+
+miRDeep2_DIR	/home/gray/NGS_project_start201707/20170918_NTU_3T3micemiRNA/currently/miRDeep2/
+miRDeep2_Config	/home/gray/NGS_project_start201707/Dev_miRNAseq/miRDeep2_Mus_Config
+

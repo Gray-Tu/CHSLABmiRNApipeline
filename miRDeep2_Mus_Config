@@ -1,0 +1,7 @@
+genome	/Public_Resources/Illumina_Genome/iGenome/Mus_musculus/UCSC/mm10/Sequence/BowtieIndex/genome
+genomeFa	/Public_Resources/Illumina_Genome/iGenome/Mus_musculus/UCSC/mm10/Sequence/WholeGenomeFasta/genome.fa
+mature_fa	/home/gray/mirbase/mouse_mature_170605.fa
+mature_out_fa	/home/gray/mirbase/mouse_mature_170605.fa_out_of_species.fa
+hairpin_fa	/home/gray/mirbase/mouse_hairpin_170605.fa
+miRDeep2Spec	Mouse
+
