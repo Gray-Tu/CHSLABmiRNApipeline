@@ -1,5 +1,5 @@
 Usage:
 
-python GetData.py SampleSheet TargetDir
-python _2_QCRun.py GlobalConfig
-python _3_miRDeep2Work.py GlobalConfig
+python GetData.py SampleSheet TargetDir <br>
+python _2_QCRun.py GlobalConfig <br>
+python _3_miRDeep2Work.py GlobalConfig <br>
