@@ -8,6 +8,9 @@ QC_Pcent	70
 Q33	-Q33
 CORE	20
 
-miRDeep2_DIR	/home/gray/NGS_project_start201707/20170918_NTU_3T3micemiRNA/currently/miRDeep2/
+miRDeep2_DIR	/home/gray/NGS_project_start201707/20170918_NTU_3T3micemiRNA/currently/miRDeep2_Vtest/
 miRDeep2_Config	/home/gray/NGS_project_start201707/Dev_miRNAseq/miRDeep2_Mus_Config
 
+QCTABLE_fp	/home/gray/NGS_project_start201707/20170918_NTU_3T3micemiRNA/currently/QCTABLE.txt
+MiRNA_RPM_Profile_fp	/home/gray/NGS_project_start201707/20170918_NTU_3T3micemiRNA/currently/miRNAExpressed_RPM.txt
+MiRNA_READ_Profile_fp	/home/gray/NGS_project_start201707/20170918_NTU_3T3micemiRNA/currently/miRNAExpressed_READ.txt
