@@ -2,7 +2,7 @@
 # --2 and 3--
 __author__ = "gray"
 __date__ = "20170920"
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 __aim__ = """
 _3_miRDeep2Work.py
 
@@ -90,7 +90,7 @@ def mapper(ori_data, marker, miRDeep2config):
      "-t", marker+"_reads_vs_mapper.arf", #out2 outArf
      "-v"]#, "2>", "report_mapper_"+marker+".log"]
     p = sup.Popen(comd, stderr=sup.PIPE)
-    p.wait()
+    #p.wait()
     p_stderr = p.communicate()[1]
     with open("report_mapper_"+marker+".log", "wb") as Fw:
         Fw.write(p_stderr)
@@ -108,7 +108,7 @@ def miRDeep2(marker, miRDeep2config):
      "-t", miRDeep2Dict["miRDeep2Spec"],#via quantifier.pl
      "-P", "-u"]#, "2>", "report_miRDeep2_"+marker+".log" ]
     p = sup.Popen(comd, stderr=sup.PIPE)
-    p.wait()
+    #p.wait()
     p_stderr = p.communicate()[1]
     with open("report_miRDeep2_"+marker+".log", "wb") as Fw:
         Fw.write(p_stderr)
