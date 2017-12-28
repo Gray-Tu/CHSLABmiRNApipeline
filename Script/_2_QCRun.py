@@ -6,7 +6,7 @@ __version__ = "1.0.2"
 __aim__ = """
 _2_QCRun.py #For miRNAseq use (TruSeq adapter content)
 
-#cutadapt -a <TruSeq 3' adapt> -m 18 -0 <outFastq> <input.gz, default .gz>
+#cutadapt -a <TruSeq 3' adapt> -m 18 -o <outFastq> <input.gz, default .gz>
 
 #fastq_quality_filter -q <Q:20> -p <70> -o <output> -i <inPutfastq> -Q33
 
