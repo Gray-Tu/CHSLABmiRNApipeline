@@ -1,8 +1,8 @@
 #!/usr/local/bin/python
 # --2 and 3--
 __author__ = "gray"
-__date__ = "20170920"
-__version__ = "1.0.2"
+__date__ = "20171228"
+__version__ = "1.0.2b"
 __aim__ = """
 _3_miRDeep2Work.py
 
@@ -119,7 +119,7 @@ def miRDeep2env(SampleSheet ,miRDeep2Dir, miRDeep2Config):
     with open(SampleSheet, "r") as Fsheet:
         content = Fsheet.readlines()
     for line in content: #No header
-        Marker = line.strip("\n").split("\t")[1]
+        Marker = line.strip().split("\t")[1]
         #outFa = Marker+"_read.fa"
         #outArf = Marker+"_reads_vs_mapper.arf"
 
@@ -161,7 +161,7 @@ if __name__ == "__main__":
     with open(SampleSheet, "r") as Fsheet:
         content = Fsheet.readlines()
     for line in content: #no header
-        item = line.strip("\n").split("\t")
+        item = line.strip().split("\t")
         Marker = item[1]
         renameDictList.append( {"SampleMarker":Marker, "QC_Dir":QCdir, 
                                 "miRDeep2WorkDir":miRDeep2Dir})
