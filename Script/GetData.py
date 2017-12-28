@@ -2,7 +2,7 @@
 #--2 and 3--
 __author__ = "gray"
 __date__ = "20170919"
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 __aim__ = """
 GetData.py for miseq pipeline CHSLAB used
 
@@ -35,7 +35,7 @@ def GetData(SampleSheet, TargetDir="./"):
         #no header
         content = Fr.readlines()
     for line in content:
-        item = line.strip("\n").split("\t")
+        item = line.strip().split("\t")
         Oripath = item[0]
         Marker = item[1]
         #---cp change name, (with gz file)
