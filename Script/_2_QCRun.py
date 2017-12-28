@@ -1,8 +1,8 @@
 #!/usr/local/bin/python
 #--2 and 3--
 __author__ = "gray"
-__date__ = "20170920"
-__version__ = "1.0.1"
+__date__ = "20171228"
+__version__ = "1.0.2"
 __aim__ = """
 _2_QCRun.py #For miRNAseq use (TruSeq adapter content)
 
@@ -100,7 +100,7 @@ def ConfigSplit(Con_fp):
         content = Fr.readlines()
     for line in content:
         if line.strip() != "":
-            item = line.strip("\n").split("\t")
+            item = line.strip().split("\t")
             reDict[item[0]] = item[1]
     return reDict
     
@@ -134,7 +134,7 @@ if __name__ == "__main__":
     with open(SampleSheet, "r") as Fsheet:
         content = Fsheet.readlines() #No header
     for line in content:
-        item = line.strip("\n").split("\t")
+        item = line.strip().split("\t")
         Marker = item[1]
         cutCmd = cmdCutadapt(Marker, QC_3ada, QC_minlen, OriDir, QCworkDir)
         fastxCmd = cmdFastxTookit(Marker, QCworkDir, QC_qval, QC_pcent, Q33,
