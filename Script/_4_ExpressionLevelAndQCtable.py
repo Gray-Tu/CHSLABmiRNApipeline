@@ -1,8 +1,8 @@
 #!/usr/local/bin/python
 # --2 and 3--
 __author__ = "gray"
-__date__ = "20170922"
-__version__ = "1.0.1"
+__date__ = "20171228"
+__version__ = "1.0.2"
 __aim__ = """
 _4_ExpressionLevelAndQCtable.py
 
@@ -50,7 +50,7 @@ def SampleMarkerParser(_sample_sheet):
     reList = []
     with open(_sample_sheet, "r") as Fsheet:
         content = Fsheet.readlines() 
-    reList = [line.strip("\n").split("\t")[1] for line in content]
+    reList = [line.strip().split("\t")[1] for line in content]
     return reList
 #---------------------------------
 
@@ -73,7 +73,7 @@ def QCtable_MapGenome(_miRDeep2Dir, _marker):
     #QC-reads and map to gemone
     with open(ReportLog, "r") as Fmap:
         content = Fmap.readlines()
-    logLineItem = content[-1].strip("\n").split("\t")
+    logLineItem = content[-1].strip().split("\t")
     Mapread = logLineItem[1]
     return float(Mapread)
 
@@ -128,7 +128,7 @@ def MapReadprofile(_miRDeep2Dir, _marker):
         with open(ExpFile[0], "r") as Fexp:
             content = Fexp.readlines()
         for line in content[1:]:
-            item = line.strip("\n").split("\t")
+            item = line.strip().split("\t")
             matureName = item[0]
             rawCount = float(item[-2])
             rpm = float(item[-1])
