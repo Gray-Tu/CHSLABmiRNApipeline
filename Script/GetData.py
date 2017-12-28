@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #--2 and 3--
 __author__ = "gray"
-__date__ = "20170919"
+__date__ = "20171228"
 __version__ = "1.0.2"
 __aim__ = """
 GetData.py for miseq pipeline CHSLAB used
