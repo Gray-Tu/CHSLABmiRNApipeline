@@ -14,3 +14,6 @@ miRDeep2_Config	/home/gray/NGS_project_start201707/Dev_miRNAseq/miRDeep2_Mus_Con
 QCTABLE_fp	/home/gray/NGS_project_start201707/20170918_NTU_3T3micemiRNA/currently/QCTABLE.txt
 MiRNA_RPM_Profile_fp	/home/gray/NGS_project_start201707/20170918_NTU_3T3micemiRNA/currently/miRNAExpressed_RPM.txt
 MiRNA_READ_Profile_fp	/home/gray/NGS_project_start201707/20170918_NTU_3T3micemiRNA/currently/miRNAExpressed_READ.txt
+
+BLASTDB {DB path for blastn}
+BLASTREPORT {merging blast to tRNA reports with sample_id from SAMPLESHEET}
